@@ -19,38 +19,102 @@
 
 	<!-- google fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Oxygen|Ubuntu|Ubuntu+Condensed" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+	<!-- animate css -->
+	<link rel="stylesheet" type="text/css" href="../assets/css/animate.css">
 
 
 </head>
 
 <body>
 
-	<div class="container-fluid">
+	<div class="container-fluid bg-dark">
 
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-			<a class="no-desktop mx-auto" href="#"><img src="../assets/images/logo.png"></a>
-			<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-				<a class="navbar-brand" href="#"><img src="../assets/images/logo.png"></a>
-				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-					<li class="nav-item active ml-md-auto mr-md-2">
-						<a class="nav-link" href="homepage.html">Home<span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item ml-md-auto mr-md-2">
-						<a class="nav-link ubuntuh" href="#">About</a>
-					</li>
-					<li class="nav-item ml-md-auto mr-md-2">
-						<a class="nav-link ubuntuh" href="#">Gallery</a>
-					</li>
-					<li class="nav-item ml-md-auto mr-md-2">
-						<a class="nav-link ubuntuh" href="contact.html">Contact</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</div>
+
+		<div class="col-lg-12">
+		
+			<div class="row">
+				<div class="col-lg-8">	
+					<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+						<a class="no-desktop mx-auto" href="homepage.html"><img src="../assets/images/logo.png"></a>
+						<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+							<a class="navbar-brand" href="homepage.html"><img src="../assets/images/logo.png"></a>
+							<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+								<li class="nav-item active ml-md-auto mr-md-2">
+									<a class="nav-link" href="homepage.html">Home<span class="sr-only">(current)</span></a>
+								</li>
+								<li class="nav-item ml-md-auto mr-md-2">
+									<a class="nav-link ubuntuh" href="about.html">About</a>
+								</li>
+								<li class="nav-item ml-md-auto mr-md-2">
+									<a class="nav-link ubuntuh" href="gallery.html">Gallery</a>
+								</li>
+								<li class="nav-item ml-md-auto mr-md-2">
+									<a class="nav-link ubuntuh" href="contact.html">Contact</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+		
+
+				<div class="col-lg-1 offset-lg-1 dropdown-container pt-3 no-tablet no-mobile">
+
+					<div class="dropdown no-tablet no-mobile">
+						<!-- <button class="btn btn-warning mt-4 width-button-fix" type="button">
+						Register
+						</button> -->
+
+						<button type="button" class="btn btn-warning mt-4 width-button-fix ubuntuh" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+						sagittis lacus vel augue laoreet rutrum faucibus.">
+						Register
+						</button>
+
+					</div>
+
+				</div> <!-- end of register - container -->
+
+				<div class="col-lg-1 dropdown-container pt-3 no-tablet no-mobile">
+
+					<div class="dropdown no-tablet no-mobile">
+						<button class="btn btn-warning dropdown-toggle mt-4 width-button-fix ubuntuh" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Login
+						</button>
+
+						<form class="dropdown-menu p-2 dropdown-menu-right">
+							<div class="form-group ubuntuh">
+								<label for="exampleDropdownFormEmail2">Email address</label>
+								<input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+							</div>
+							<div class="form-group ubuntuh">
+								<label for="exampleDropdownFormPassword2">Password</label>
+								<input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+							</div>
+							<div class="form-check ubuntuh">
+								<input type="checkbox" class="form-check-input" id="dropdownCheck2">
+								<label class="form-check-label" for="dropdownCheck2">
+								Remember me
+								</label>
+							</div>
+							<button type="submit" class="btn btn-block btn-primary ubuntuh">Sign in</button>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item pl-0 ubuntuh" href="#">Forgot password?</a>
+
+
+						</form>
+					</div>
+
+				</div> <!-- end of login - container -->
+
+			</div> <!-- end of row for nav -->
+
+		</div>
+
+	</div> <!-- - end of first container, for nav -->
 
 	<div class="container-fluid">
 			
@@ -96,7 +160,7 @@
 			<div class="for-space"></div>
 			<div class="for-space"></div>
 			<div class="for-space"></div>
-			<h3 class="ubuntuh"><em>FRONTIER&copy;</em><small>charting the skies</small></h3>
+			<h3 class="ubuntuh"><em>FRONTIER&trade;</em><small> charting the skies</small></h3>
 			<div class="for-space"></div>
 
 		</div>	
@@ -153,9 +217,42 @@
 
 		</div>
 
-		<footer class="container-fluid bg-darklight height-20">
+		<footer class="container-fluid bg-darklight h-auto pro">
 			
-			<P class="text-light">FRONTIER&copy; BY CHRISTIAN GERARD DELOS REYES | MNL | TUITT CODING BOOTCAMP</P>
+			<p class="p-3 mb-0 text-center text-white">
+			Frontier&trade; | Christian Gerard Delos Reyes | Tuitt Coding Bootcamp &copy;
+			</p>
+
+			<div class="col-lg-12">
+				<div class="row text-center text-white">
+
+					<div class="col-lg-4 col-md-12 disclaimer">
+						<p>DISCLAIMER</p>
+
+						<small>This website don't have any intention for copyright infringement. Images in this website are from Pexels, Unsplash, Dribble and Google Images. Photos are used for training purposes and not to commercialize nor profit.</small>
+
+					</div>
+					<div class="col-lg-4 col-md-12 career">
+						<p>CAREER</p>
+
+						<a class="d-block text-white" href="#">Work on Frontier</a>
+						<a class="d-blcok text-white" href="#">See job Offerings</a>
+						<a class="d-block text-white" href="#">Employee's information System</a>
+					</div>
+					<div class="col-lg-4 col-md-12 follow-us">
+						<p>FOLLOW US ON</p>
+							<div class="row pb-3">
+								<div class="for-follow-us col-2 offset-2"><a href="#"><i class="fab fa-gitlab fa-2x text-white"></i></a></div>
+								<div class="for-follow-us col-2"><a href="#"><i class="fab fa-github fa-2x text-white"></i></a></div>
+								<div class="for-follow-us col-2"><a href="#"><i class="fab fa-facebook fa-2x text-white"></i></a></div>
+								<div class="for-follow-us col-2"><a href="#"><i class="fas fa-envelope fa-2x text-white"></i></a></div>
+							</div>
+					</div>
+
+				</div>
+
+			</div>
+
 
 		</footer>
 

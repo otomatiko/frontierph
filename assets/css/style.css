@@ -8,7 +8,8 @@
 
 /*font-family: 'Oxygen', sans-serif;
 font-family: 'Ubuntu', sans-serif;
-font-family: 'Ubuntu Condensed', sans-serif;*/
+font-family: 'Ubuntu Condensed', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;*/
 
 .oxygen {
 	font-family: 'Oxygen', sans-serif;
@@ -20,6 +21,10 @@ font-family: 'Ubuntu Condensed', sans-serif;*/
 
 .ubuntup {
 	font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.pro {
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 body {
@@ -124,6 +129,10 @@ body {
 	height: 70vh;
 }
 
+.height-100 {
+	height: 100vh;
+}
+
 .no-height {
 	height: 3px;
 }
@@ -132,9 +141,17 @@ body {
 	height: 2.5vh;
 }
 
+.for-space-mini {
+	height: 0.25vh;
+}
+
 .height-50 {
 	min-height: 50vh;
 	height: auto;
+}
+
+.width-button-fix {
+	width: 100px;
 }
 
 .shadow-lg-mod {
@@ -144,6 +161,58 @@ body {
 .card {
 	width: 18rem;
 }
+
+#jumbotron-about {
+	background-color: #141414;
+	height: 70vh;
+	border-radius: 0;
+	margin-bottom: 0;	 
+}
+
+
+#landing-about {
+	color: #f2f2f2;
+	font-size: 5em;
+	padding-top: 20vh;
+	letter-spacing: 5px;
+}
+
+.about-tags {
+	font-weight: bold;
+	text-shadow: 3px 2px 3px lightgrey;
+}
+
+#mission {
+	height: 100%;
+/*	background: #141414;
+	color: #f2f2f2;*/
+}
+
+#vision {
+	height: 100%;
+}
+
+.fadeIn {
+	animation-duration: 5s;
+}
+
+.career {
+	text-decoration: none;
+}
+
+.for-follow-us {
+	height: 30px;
+	width: 70px;
+	float: left;
+}
+
+#head-gallery {
+	width: 100%;
+	background-color: #141414;
+	color: #f2f2f2;
+	text-transform: uppercase;
+}
+
 
 /*MEDIA QUERIES-----------------------------*/
 
@@ -160,7 +229,37 @@ body {
 		display: none;
 	}
 
+	.dropdown-menu {
+		min-width: 30rem;
+		z-index: 2000;
+	}
 
+	.form-left {
+		padding-left: 3rem!important;
+	}
+
+	#gmaps{
+	width: 80%;
+	height: 83.5%;
+	}
+
+	
+
+	.disclaimer {
+
+		border-right: 1px solid grey;
+
+	}
+
+	.career {
+
+	}
+
+	.follow-us {
+
+		border-left: 1px solid grey;
+
+	}
 }
 
 /*tablet view*/
@@ -184,6 +283,10 @@ body {
 	}
 
 	a.nav-link {
+		text-align: center;
+	}
+
+	.gmaps-title {
 		text-align: center;
 	}
 
@@ -214,6 +317,47 @@ body {
 
 	.card {
 	margin-top: 1rem;
+	}
+
+	#landing-about{
+		font-size: 3em;
+	}
+
 }
 
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+/*    min-width: 100%; 
+    min-height: 100%;*/
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+    position: fixed;
+    bottom: 50;
+    top: 50;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
 }
