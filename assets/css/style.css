@@ -162,6 +162,10 @@ body {
 	width: 18rem;
 }
 
+.gallery-items img {
+	height: 15rem;
+}
+
 #jumbotron-about {
 	background-color: #141414;
 	height: 70vh;
