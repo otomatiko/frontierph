@@ -210,12 +210,40 @@ body {
 	float: left;
 }
 
-#head-gallery {
-	width: 100%;
-	background-color: #141414;
-	color: #f2f2f2;
-	text-transform: uppercase;
+#sidebar-gallery {
+	/*position: absolute	;*/
 }
+
+.card-gallery {
+	height: 35em;
+	width: 100%;
+}
+
+.card-gallery > .card-img-top {
+	height: 45%;
+}
+
+.card-gallery .btn {
+	/*margin-top: auto;*/
+}
+
+#jumbotron2-gallery {
+	height: 20vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*MEDIA QUERIES-----------------------------*/
@@ -250,20 +278,15 @@ body {
 	
 
 	.disclaimer {
-
 		border-right: 1px solid grey;
-
 	}
 
-	.career {
-
-	}
 
 	.follow-us {
 
 		border-left: 1px solid grey;
-
 	}
+
 }
 
 /*tablet view*/
@@ -294,6 +317,18 @@ body {
 		text-align: center;
 	}
 
+	.card-gallery > .card-img-top {
+	height: 60%;
+	}
+
+	.no-both {
+		display: none;
+	}
+
+	.card-gallery {
+	height: auto;
+	width: 100%;
+	}
 }
 /*mobile view*/
 
@@ -327,7 +362,26 @@ body {
 		font-size: 3em;
 	}
 
+	.no-both {
+		display: none;
+	}
+
+	.card-gallery {
+	height: auto;
+	width: 100%;
+	}
+
+
 }
+
+
+
+
+
+
+
+
+
 
 
 #myVideo {
